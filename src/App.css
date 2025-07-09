@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+@font-face {
+  font-family: "Marhey";
+  src: url(assets/fonts/Marhey-VariableFont_wght.ttf);
+}
+html {
+  direction: rtl;
+  font-family: "Marhey" !important;
+}
