@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 // React Hooks 
 import { useState } from 'react';
 // Material ui
@@ -32,14 +33,15 @@ function Quran() {
     };
 
     const handlers = useSwipeable({
-        onSwipedLeft: Next,
-        onSwipedRight: Prev,
+        onSwipedLeft: Prev,
+        onSwipedRight: Next,
         preventScrollOnSwipe: true,
         trackTouch: true,
     });
 
     return (
         <div className='flex flex-col sm:flex-row items-center justify-between gap-4 p-2 relative'>
+
 
             {isSidebarOpen ? (
                 <button
@@ -49,12 +51,21 @@ function Quran() {
                     <CloseIcon fontSize='large' />
                 </button> 
             ) : (
+            <>
+            <div className='absolute top-2 left-2 z-50 text-black'>
+                <Link to={"/"}>
+                    <IconButton size="large" aria-label="back-arrow">
+                        <ArrowBackIcon fontSize="inherit" color="secondary" />
+                    </IconButton>
+                </Link>
+            </div>
             <button
-                className='sm:hidden absolute top-2 left-2 z-50'
+                className='sm:hidden absolute top-2 right-2 z-50'
                 onClick={() => setIsSidebarOpen(true)}
             >
                 <MenuIcon fontSize='large' />
             </button>
+            </>
             )
             }
 
@@ -64,7 +75,7 @@ function Quran() {
                 <img
                     src={`https://maknoon.com/quran/hafs/${pageNum}.svgz`}
                     alt={`صفحة رقم ${pageNum}`}
-                    className="w-10/12 mt-15 mx-auto"
+                    className="w-full mt-30 mx-auto"
                 />
             </div>
 
