@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 // React Hooks 
 import { useState } from 'react';
 // Material ui
@@ -52,7 +51,7 @@ function Quran() {
                 </button> 
             ) : (
             <>
-            <div className='absolute top-2 left-2 z-50 text-black'>
+            <div className='sm:hidden absolute top-2 left-2 z-50 text-black'>
                 <Link to={"/"}>
                     <IconButton size="large" aria-label="back-arrow">
                         <ArrowBackIcon fontSize="inherit" color="secondary" />
