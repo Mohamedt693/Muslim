@@ -29,7 +29,8 @@ export default function MainPage() {
             Fajr={`${prayerTime.Fajr}:00`}
             Dhuhr={`${prayerTime.Dhuhr}:00`}
             Asr={`${prayerTime.Asr}:00`}
-            Maghrib={`${prayerTime.Maghrib}:00`}
+            Maghrib="05:15"
+            // Maghrib={`${prayerTime.Maghrib}:00`}
             Isha={`${prayerTime.Isha}:00`}
         />
         <Header loading={loading} TimeZone={TimeZone} />
