@@ -20,7 +20,6 @@ export default function SurahSelect() {
   const [shekh, setShekh] = useState();
   const [num, setNum] = useState(null)
 
-  console.log(surah)
 
   useEffect(()=>{
     fetchSurah()
