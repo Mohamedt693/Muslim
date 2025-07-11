@@ -40,13 +40,15 @@ export const useStore = create((set) => ({
     },
 
     // Action: fetch Surah
-    fetchSurah: async () => {
-        try {
-            const response = await axios.get("http://api.alquran.cloud/v1/quran/en.asad",
-                { signal: AbortSignal.timeout(10000) });
-            set({ surah: response.data.data.surahs });
-        } catch (error) {
-            set({ error: error.message });
-        }
-    },
+fetchSurah: async () => {
+    try {
+        const response = await axios.get("/api/quran", {
+            signal: AbortSignal.timeout(10000),
+        });
+
+        set({ surah: response.data.data.surahs });
+    } catch (error) {
+        set({ error: error.message });
+    }
+},
 }));
