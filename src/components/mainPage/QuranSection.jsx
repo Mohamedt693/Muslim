@@ -1,5 +1,4 @@
 import React from 'react'
-// import Koran from '../Azkar/Icons/Koran.png'
 import { Link } from 'react-router-dom'
 
 function QuranSection() {

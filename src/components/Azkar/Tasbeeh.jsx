@@ -1,8 +1,9 @@
 import React from "react";
-import Counterbtn from "./Counterbtn";
 import { useState } from "react";
-import data from "./Azkar.json";
 import { Link } from "react-router-dom";
+import data from "./Azkar.json";
+import Counterbtn from "./Counterbtn";
+// Material ui
 import IconButton from "@mui/material/IconButton";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import RefreshIcon from "@mui/icons-material/Refresh";

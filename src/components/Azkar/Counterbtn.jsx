@@ -4,15 +4,11 @@ import { useState } from 'react'
 function Counterbtn({count, onCountChange }) {
     const [counter, setCounter] = useState(count)
 
-    // useEffect(() => {
-    //     onCountChange(counter); // أول تحميل نبعته
-    // }, [counter]);
-
     const handleCountClick = () => {
         if(counter > 0){
             const newValue = counter - 1;
             setCounter(newValue)
-            onCountChange(newValue); // نبعته كل مرة يتغير
+            onCountChange(newValue); 
         }else {
             return;
         }

@@ -21,13 +21,13 @@ function Quran() {
 
     const Next = () => {
         if (pageNum < 603) {
-            setPageNum((prev) => prev + 2);
+            setPageNum((prev) => prev + 1);
         }
     };
 
     const Prev = () => {
         if (pageNum > 1) {
-            setPageNum((prev) => prev - 2);
+            setPageNum((prev) => prev - 1);
         }
     };
 
