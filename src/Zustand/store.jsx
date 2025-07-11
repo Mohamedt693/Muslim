@@ -46,7 +46,7 @@ fetchSurah: async () => {
             signal: AbortSignal.timeout(10000),
         });
 
-        set({ surah: response.data.data.surahs });
+        set({ surah: response.data.data });
     } catch (error) {
         set({ error: error.message });
     }

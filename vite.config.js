@@ -6,7 +6,7 @@ export default defineConfig({
     server: {
     proxy: {
         '/api/quran': {
-        target: 'http://api.alquran.cloud/v1/quran/en.asad',
+        target: 'https://api.alquran.cloud/v1/surah',
         changeOrigin: true,
         rewrite: () => '',
         },
