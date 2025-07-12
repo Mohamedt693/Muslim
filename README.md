@@ -1,6 +1,6 @@
 # 🕌 Muslim Web App
 
-An Arabic Islamic web app that displays **prayer times** based on your selected city and allows you to **listen to Quran surahs** recited by popular sheikhs. Built using **React**, **Zustand**, **Tailwind CSS**, and **Material UI**.
+An Arabic Islamic web app built with Vite and React, featuring prayer times, Quran surah playback, modern routing with React Router, notifications via React Toastify, testing with Vitest and Vitest Mock Axios, state management by Zustand, and styling using Tailwind CSS and Material UI
 
 ---
 
@@ -24,13 +24,17 @@ An Arabic Islamic web app that displays **prayer times** based on your selected 
 | Tech             | Purpose                                  |
 |------------------|------------------------------------------|
 | React            | UI framework                             |
+| Vite             | Fast build tool for React                |
 | Zustand          | State management                         |
 | Tailwind CSS     | Styling                                  |
 | Material UI      | UI components like buttons & dropdowns   |
+| react-router-dom | Routing between pages                    |
+| react-toastify   | Toast notifications                      |
 | Axios            | Fetching data from APIs                  |
 | moment-timezone  | Handling time and timezone               |
 | React Leaflet    | Map rendering for nearby mosques         |
 | Vitest & RTL     | Testing framework                        |
+| vitest-mock-axios| Mocking Axios in unit tests              |
 
 ---
 
