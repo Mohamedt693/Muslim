@@ -1,7 +1,6 @@
 # 🕌 Muslim Web App
 
-An Arabic Islamic web app built with Vite and React, featuring prayer times, Quran surah playback, modern routing with React Router, notifications via React Toastify, testing with Vitest and Vitest Mock Axios, state management by Zustand, and styling using Tailwind CSS and Material UI
-
+An Arabic Islamic web app built with Vite and React, featuring daily prayer times, Quran surah playback, modern routing with React Router, notifications via React Toastify, testing with Vitest and Vitest Mock Axios, state management powered by Zustand, and responsive styling using Tailwind CSS and Material UI.
 ---
 
 ## ✅ Features
