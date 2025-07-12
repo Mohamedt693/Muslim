@@ -29,6 +29,7 @@ export const useStore = create((set) => ({
             TimeZone: res.data.data.meta.timezone,
         });
 
+
         // simulate delay
         setTimeout(() => {
             set({ loading: false });

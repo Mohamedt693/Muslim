@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import moment from "moment";
+import moment from "moment-timezone";
 import toast, { Toaster } from 'react-hot-toast';
 import Azan from './Azan.mp3';
 
@@ -38,12 +38,13 @@ function AzanPage({ Fajr, Dhuhr, Asr, Maghrib, Isha }) {
                 </div>
             </div>
         ), { duration: 8000 });
-        setLastAzanTime(moment().format("HH:mm"));
+        setLastAzanTime(moment().format("HH:mm:ss"));
     };
+
 
     useEffect(() => {
         const interval = setInterval(() => {
-            const now = moment().format("HH:mm");
+            const now = moment().format("HH:mm:ss");
 
             if (now === Fajr && now !== lastAzanTime) {
                 handleAzan("الفجر");
