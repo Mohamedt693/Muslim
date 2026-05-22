@@ -1,0 +1,8 @@
+[
+    { "id": "minsh", "name": "محمد صديق المنشاوي", "server": "https://server10.mp3quran.net/minsh" },
+    { "id": "husr", "name": "محمود خليل الحصري", "server": "https://server13.mp3quran.net/husr" },
+    { "id": "shur", "name": "سعود الشريم", "server": "https://server7.mp3quran.net/shur" },
+    { "id": "maher", "name": "ماهر المعيقلي", "server": "https://server12.mp3quran.net/maher" },
+    { "id": "afs", "name": "مشاري العفاسي", "server": "https://server8.mp3quran.net/afs" },
+    { "id": "sds", "name": "عبد الرحمن السديس", "server": "https://server11.mp3quran.net/sds" }
+]
